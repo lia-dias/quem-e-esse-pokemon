@@ -1,0 +1,106 @@
+#container-qep-background {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  #container-qep-background .light{
+    mask-image: url("https://raw.githubusercontent.com/lia-dias/quem-e-esse-pokemon/main/assets/glow.png");
+    -webkit-mask-image: url("https://raw.githubusercontent.com/lia-dias/quem-e-esse-pokemon/main/assets/glow.png");
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    mask-position: center;
+    -webkit-mask-position: center;
+  }
+  
+  #container-qep-background .outer-light {
+    width: 100%;
+    height: 100%;
+    animation: outer-light-skew 7s infinite reverse;
+    -webkit-animation: outer-light-skew 7s infinite reverse;
+  }
+  
+  #container-qep-background .inner-light {
+    width: 55%;
+    height: 55%;
+    transform: rotate(45deg);
+  }
+  
+  #container-qep-background .baby-blue-light {
+    background-color: #7EC8E3;
+  }
+  
+  #container-qep-background .tiffany-blue-light {
+    background-color: #9DE3F6;
+  }
+  
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* ANIMAÇÕES */
+  
+  @keyframes inner-light-skew {
+    0% {
+      transform: skew(0deg, 0deg)
+    }
+    
+    15% {
+    transform: skew(2deg, 0deg)
+    }
+    
+    30% {
+      transform: skew(0deg, 0deg)
+    }
+    
+    50% {
+    transform: skew(2deg, 6deg)
+    }
+    
+    70% {
+      transform: skew(0deg, 0deg)
+    }
+    
+    85% {
+    transform: skew(7deg, 4deg)
+    }
+    
+    100% {
+    transform: skew(0deg, 0deg)
+    }
+  }
+  
+  @keyframes outer-light-skew {
+    0% {
+      transform: skew(0deg, 0deg)
+    }
+    
+    15% {
+    transform: skew(1deg, 0deg)
+    }
+    
+    30% {
+      transform: skew(0deg, 0deg)
+    }
+    
+    50% {
+    transform: skew(1deg, 2deg)
+    }
+    
+    70% {
+      transform: skew(0deg, 0deg)
+    }
+    
+    85% {
+    transform: skew(3deg, 1deg)
+    }
+    
+    100% {
+    transform: skew(0deg, 0deg)
+    }
+  }
